@@ -1387,4 +1387,8 @@ input {
   .mobile-d-none1 {
     display: none;
   }
+  #about-insta,
+  #testimonials {
+    padding-bottom: 60px;
+  }
 }
