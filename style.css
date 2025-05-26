@@ -1384,4 +1384,7 @@ input {
   .about-insta-main {
     grid-template-columns: repeat(1, 1fr);
   }
+  .mobile-d-none1 {
+    display: none;
+  }
 }
