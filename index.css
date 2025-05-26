@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Georgia";
+  src: local("Georgia"), url("./assets/font/georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia";
+  src: local("Georgia Bold"),
+    url("./assets/font/georgiabold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI"),
+    url("./assets/font/segoeuithis.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Bold"),
+    url("./assets/font/segoeuithibd.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #c4a063;
+  --heading: #af905c;
+  --text: #fce9b9;
+  --bg-light: #b2b2b2;
+  --description: #1a1e25;
+  --gap: clamp(10px, 1vw, 1vw);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Segoe UI";
+  position: relative;
+  overflow-x: hidden;
+}
+.container {
+  padding: 0 6vw;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Georgia" !important;
+  font-weight: 400 !important;
+}
+p {
+  line-height: 1.8;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+#testi-progress::-webkit-progress-bar {
+  background-color: #f0f0f0;
+  border-radius: 2px;
+}
+#testi-progress::-webkit-progress-value {
+  background-color: #c4a063;
+  border-radius: 2px;
+}
+#testi-progress::-moz-progress-bar {
+  background-color: #c4a063;
+  border-radius: 2px;
+}
