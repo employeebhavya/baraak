@@ -157,7 +157,6 @@ document.addEventListener("DOMContentLoaded", function () {
         start: "top 100%",
         end: "bottom 70%",
         scrub: 1,
-        markers: true,
       },
     });
 
@@ -189,7 +188,6 @@ document.addEventListener("DOMContentLoaded", function () {
         start: "top 100%",
         end: "bottom 70%",
         scrub: 1,
-        markers: true,
       },
     });
 
