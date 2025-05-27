@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         tl.to(".main-logo", {
-          top: "40px",
+          top: "6.5%",
           scale: 0.5,
           transformOrigin: "top center",
           ease: "power1.inOut",
