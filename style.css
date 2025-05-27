@@ -1165,9 +1165,9 @@ input {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: clamp(40px, 5vw, 5vw);
-  height: clamp(40px, 5vw, 5vw);
-  background-color: white;
+  width: clamp(40px, 4vw, 4vw);
+  height: clamp(40px, 4vw, 4vw);
+  background-color: var(--primary);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -1183,12 +1183,17 @@ input {
 }
 
 .arrow:hover {
-  background-color: #f0f0f0;
+  background-color: var(--description);
   transform: translateY(-50%) scale(1.05);
 }
 
 .arrow:active {
   transform: translateY(-50%) scale(0.95);
+}
+
+.arrow img {
+  width: clamp(15px, 1.5vw, 1.5vw);
+  height: auto;
 }
 
 .arrow-left {
@@ -1239,7 +1244,7 @@ input {
 }
 .about-insta-main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: clamp(20px, 2vw, 2vw);
 }
 .about-insta-main-col {
@@ -1254,6 +1259,7 @@ input {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+
 .about-insta-hover {
   position: absolute;
   top: 0;
@@ -1269,15 +1275,26 @@ input {
   scale: 0;
   transition: opacity 0.3s ease;
 }
-/* .about-insta-main-col:hover .about-insta-hover {
-  opacity: 1;
-  scale: 1;
-} */
-.about-insta-hover img {
+.about-insta-hover-static {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(20px, 2vw, 2vw);
+  transition: opacity 0.3s ease;
+}
+.about-insta-hover img,
+.about-insta-hover-static img {
   width: clamp(20px, 2vw, 2vw);
   height: auto;
 }
-.about-insta-hover p {
+.about-insta-hover p,
+.about-insta-hover-static p {
   font-size: clamp(15px, 1.1vw, 1.1vw);
   color: #fff;
   margin-bottom: clamp(10px, 1vw, 1vw);

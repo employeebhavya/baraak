@@ -126,4 +126,91 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   aboutInsta();
+
+  function aboutAnimation() {
+    const tl = gsap.timeline();
+    tl.from(".about-page-landing", {
+      duration: 0.5,
+      opacity: 0,
+      y: "-100%",
+      ease: "power2.out",
+    })
+      .from(".about-page-landing h1", {
+        duration: 0.5,
+        opacity: 0,
+        y: 50,
+        ease: "power2.out",
+      })
+      .from(".about-page-landing p", {
+        duration: 0.5,
+        opacity: 0,
+        y: 50,
+        ease: "power2.out",
+      });
+  }
+  aboutAnimation();
+
+  function aboutInnerAnimations() {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#aboutus-sec",
+        start: "top 100%",
+        end: "bottom 70%",
+        scrub: 1,
+        markers: true,
+      },
+    });
+
+    tl.from(".aboutus-sec-col1-list-items li", {
+      duration: 0.5,
+      opacity: 0,
+      x: -50,
+      ease: "power2.out",
+      stagger: 0.2,
+    }).from(
+      ".aboutus-sec-col2 p",
+      {
+        duration: 1,
+        delay: 0.5,
+        opacity: 0,
+        x: 50,
+        ease: "power2.out",
+        stagger: 0.2,
+      },
+      "<"
+    );
+  }
+  aboutInnerAnimations();
+
+  function aboutInstaAnimations() {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#about-insta",
+        start: "top 100%",
+        end: "bottom 70%",
+        scrub: 1,
+        markers: true,
+      },
+    });
+
+    tl.from(".about-insta-heading h2", {
+      duration: 1,
+      delay: 0.5,
+      opacity: 0,
+      x: -50,
+      ease: "power2.out",
+    }).from(
+      ".about-insta-main div",
+      {
+        duration: 1,
+        delay: 0.5,
+        opacity: 0,
+        x: 50,
+        ease: "power2.out",
+        stagger: 0.2,
+      },
+      "<"
+    );
+  }
+  aboutInstaAnimations();
 });
