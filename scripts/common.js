@@ -211,4 +211,69 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
   aboutInstaAnimations();
+
+  function whatsOnANimation() {
+    const tl = gsap.timeline();
+
+    tl.from(".whatson-heading", {
+      opacity: 0,
+      y: 50,
+      duration: 0.5,
+      delay: 0.1,
+    }).from(".whatson-page-main div", {
+      opacity: 0,
+      y: 50,
+      duration: 0.5,
+      delay: 0.1,
+    });
+  }
+  whatsOnANimation();
+
+  function maptoggleAnimation() {
+    const toggleImage = document.querySelector(".toggle-img");
+    const col1 = document.querySelector(".map-sec-col-1");
+    const col2 = document.querySelector(".map-sec-col-2");
+
+    toggleImage.addEventListener("click", function (params) {
+      col1.classList.toggle("active");
+      col2.classList.toggle("active");
+    });
+  }
+  maptoggleAnimation();
+
+  function findUsAnimation1() {
+    gsap.from(".map-sec", {
+      opacity: 1,
+      duration: 0.5,
+      y: 100,
+      delay: 0.1,
+    });
+  }
+  findUsAnimation1();
+
+  function findUsAnimation2() {
+    gsap.from(".find-loc-col-1", {
+      opacity: 0,
+      duration: 0.5,
+      x: -100,
+      delay: 0.1,
+      scrollTrigger: {
+        trigger: ".findsUslocation",
+        start: "top 80%",
+        end: "bottom top",
+      },
+    });
+    gsap.from(".find-loc-col-2", {
+      opacity: 0,
+      duration: 0.5,
+      x: 100,
+      delay: 0.1,
+      scrollTrigger: {
+        trigger: ".findsUslocation",
+        start: "top 80%",
+        end: "bottom top",
+      },
+    });
+  }
+  findUsAnimation2();
 });
