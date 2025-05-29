@@ -277,3 +277,91 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   findUsAnimation2();
 });
+function testimonialScroll() {
+  const progressBar = document.getElementById("testi-progress");
+
+  // Check if it's desktop (min-width: 768px)
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#testimonials",
+        start: "top top",
+        end: "bottom top",
+        scrub: 1,
+        pin: true,
+        onUpdate: (self) => {
+          progressBar.value = self.progress * progressBar.max;
+        },
+      },
+    });
+
+    tl.to(".testimonials-main", {
+      x: "-100%",
+      duration: 1,
+      ease: "none",
+    });
+  }
+}
+testimonialScroll();
+
+function bookingHeader() {
+  gsap.from(".booking-page-landing", {
+    opacity: 0,
+    duration: 0.5,
+    y: 100,
+    delay: 0.1,
+  });
+}
+bookingHeader();
+
+function bookReservationForm() {
+  gsap.from(".book-reservation-col-1", {
+    opacity: 0,
+    duration: 0.5,
+    x: -100,
+    delay: 0.1,
+    scrollTrigger: {
+      trigger: "#book-reservation",
+      start: "top 80%",
+      end: "bottom top",
+    },
+  });
+  gsap.from(".book-reservation-col-2", {
+    opacity: 0,
+    duration: 0.5,
+    x: 100,
+    delay: 0.1,
+    scrollTrigger: {
+      trigger: "#book-reservation",
+      start: "top 80%",
+      end: "bottom top",
+    },
+  });
+}
+bookReservationForm();
+
+function privateDining() {
+  gsap.from(".private-dining-col-1", {
+    opacity: 0,
+    duration: 0.5,
+    x: -100,
+    delay: 0.1,
+    scrollTrigger: {
+      trigger: "#private-dining",
+      start: "top 80%",
+      end: "bottom top",
+    },
+  });
+  gsap.from(".private-dining-col-2", {
+    opacity: 0,
+    duration: 0.5,
+    x: 100,
+    delay: 0.1,
+    scrollTrigger: {
+      trigger: "#private-dining",
+      start: "top 80%",
+      end: "bottom top",
+    },
+  });
+}
+privateDining();

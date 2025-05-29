@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
   </head>
-  <body id="about-page">
+  <body id="booking-page">
     <!-- header-starts-here -->
     <header id="header">
       <div class="container">
@@ -50,10 +50,10 @@
             <li>
               <a class="headernava" href="./index.html">HOME</a>
             </li>
-            <li class="active">
+            <li>
               <a class="headernava" href="./about.html">ABOUT</a>
             </li>
-            <li>
+            <li class="active">
               <a class="headernava" href="./booking.html">BOOKING</a>
             </li>
             <li>
@@ -244,162 +244,136 @@
     <!-- reservation-fomr-ends-here -->
     <div id="main">
       <!-- landing-starts-here -->
-      <section id="landing" class="about-page-landing">
-        <div class="landing-content" id="landing-content-about">
-          <h1>Baraak by BVK: A Symphony of <br />Indo-Arabian Flavors</h1>
-          <p>Dubai's Ultimate Indo-Arab Silk Route Culinary Journey</p>
-        </div>
-      </section>
+      <section id="landing" class="booking-page-landing"></section>
       <!-- landing-ends-here -->
 
-      <!-- about-starts-here -->
-      <section id="aboutus-sec">
+      <section id="book-reservation">
         <div class="container">
-          <div class="aboutus-sec-col1">
-            <ul class="aboutus-sec-col1-list-items">
-              <li>
-                <p>Space for max. 80 people</p>
-                <p>20 m2 of space</p>
-              </li>
-              <li>
-                <img src="./assets/about/tick.svg" alt="tick" /> Fine Dining
-                Experience
-              </li>
-
-              <li>
-                <img src="./assets/about/tick.svg" alt="tick" /> Family-Friendly
-                Ambience
-              </li>
-              <li>
-                <img src="./assets/about/tick.svg" alt="tick" /> Indo-Arabian
-                Fusion Cuisine
-              </li>
-              <li>
-                <img src="./assets/about/tick.svg" alt="tick" /> Fast &
-                Attentive Service
-              </li>
-              <li>
-                <img src="./assets/about/tick.svg" alt="tick" /> Cultural
-                Culinary Showcase
-              </li>
-              <li>
-                <img src="./assets/about/tick.svg" alt="tick" /> Star-Studded
-                Legacy
-              </li>
-            </ul>
-            <button id="button" class="header-button">
-              book a reservation
-            </button>
+          <div class="book-reservation-col-1">
+            <h2>Book a Reservation</h2>
+            <form action="">
+              <div class="form-group-book-reservation">
+                <label for="name">Name<span>*</span></label>
+                <input class="name" id="name" type="text" required />
+              </div>
+              <div class="form-group-book-reservation">
+                <label for="phone">Phone Number<span>*</span></label>
+                <input class="phone" id="phone" type="phone" required />
+              </div>
+              <div class="form-group-book-reservation">
+                <label for="date">Date<span>*</span></label>
+                <input class="date" id="date" type="date" required />
+              </div>
+              <div class="form-group-book-reservation">
+                <label for="people">Number of People<span>*</span></label>
+                <input class="people" id="people" type="text" required />
+              </div>
+              <button id="button" type="submit">book a reservation</button>
+            </form>
           </div>
-          <div class="aboutus-sec-col2">
-            <p>
-              Baraak by BVK is a celebration of flavor, heritage, and
-              hospitality—bringing together the rich culinary traditions of
-              India and Arabia in the heart of Dubai. Founded by the Kannan Ravi
-              Group, a reputed business conglomerate in the UAE, Baraak opened
-              its doors on May 26, 2024, on Sheikh Khalifa Bin Zayed Road, Al
-              Karama. The restaurant’s grand launch was a star-studded affair,
-              graced by leading South Indian film stars and dignitaries
-              including MPs Kathir Anand and Thol Thirumavalavan, and Tambaram
-              Deputy Mayor Kamaraj, among others.
-            </p>
-            <p>
-              With a menu curated to reflect the soul of Indo-Arabian cuisine,
-              Baraak blends age-old recipes with contemporary presentation,
-              offering a unique dining experience for food lovers across Dubai.
-              The ambiance is designed to exude warmth and authenticity, making
-              it an inviting space for families, friends, and culinary
-              explorers.
-            </p>
-            <p>
-              Backed by the trusted legacy of the Kannan Ravi Group, Baraak is
-              more than just a restaurant—it is a cultural bridge and a new
-              benchmark in fusion dining.
-            </p>
+          <div class="book-reservation-col-2">
+            <img src="./assets/booking/2.png" alt="image" />
           </div>
         </div>
       </section>
-      <!-- about-ends-here -->
 
-      <!-- about-slider-starts-here -->
-      <section id="about-slider">
-        <div class="about-slider-heading">
-          <h2>A Signature Dining Experience</h2>
-        </div>
-        <div class="slider-container">
-          <div class="slider-wrapper">
-            <button class="arrow arrow-left">
-              <img src="./assets/about/left-arrow.svg" alt="left arrow" />
-            </button>
-
-            <div class="slider-images" id="slider-images">
-              <!-- Images will be added dynamically via JavaScript -->
-            </div>
-
-            <button class="arrow arrow-right">
-              <img src="./assets/about/right-arrow.svg" alt="right arrow" />
-            </button>
-          </div>
-
-          <div class="slide-content">
-            <h2 id="profile-name">Loading...</h2>
-            <p id="profile-description">Please wait while we load profiles</p>
-          </div>
-        </div>
-      </section>
-      <!-- about-slider-ends-here -->
-
-      <!-- follow-on-instagram-starts-here -->
-      <section id="about-insta">
+      <section id="private-dining">
         <div class="container">
-          <div class="about-insta-heading">
-            <h2>Follow us on Instagram</h2>
+          <div class="private-dining-col-1">
+            <div>
+              <h2>Private Dining</h2>
+              <p>
+                BARAAK is the perfect choice for all types of occasions—business
+                lunches, festive dinners, intimate celebrations, engagements,
+                birthdays, and anniversaries, or even a classic wedding
+                breakfast. Its elegance, privacy, and exceptional cuisine create
+                a memorable experience for every guest.
+              </p>
+            </div>
+            <form action="">
+              <div class="form-main-group-bbok-reservation">
+                <div class="form-group-book-reservation">
+                  <label for="name">Name<span>*</span></label>
+                  <input class="name" id="name" type="text" required />
+                </div>
+                <div class="form-group-book-reservation">
+                  <label for="phone">Phone Number<span>*</span></label>
+                  <input class="phone" id="phone" type="phone" required />
+                </div>
+              </div>
+              <button id="button" type="submit">schedule a call</button>
+            </form>
           </div>
-          <div class="about-insta-main">
-            <div class="about-insta-main-col">
-              <img src="./assets/about/insta1.png" alt="Instagram 1" />
-              <div class="about-insta-hover-static">
-                <img src="./assets/insta.svg" alt="instagram" />
-                <div>
-                  <p>@baraakofficial</p>
-                  <button id="button-white">Follow Us</button>
-                </div>
-              </div>
-            </div>
-            <div class="about-insta-main-col">
-              <img src="./assets/about/insta1.png" alt="Instagram 1" />
-              <div class="about-insta-hover">
-                <img src="./assets/insta.svg" alt="instagram" />
-                <div>
-                  <p>@baraakofficial</p>
-                  <button id="button-white">Follow Us</button>
-                </div>
-              </div>
-            </div>
-            <div class="about-insta-main-col">
-              <img src="./assets/about/insta2.png" alt="Instagram 2" />
-              <div class="about-insta-hover">
-                <img src="./assets/insta.svg" alt="instagram" />
-                <div>
-                  <p>@baraakofficial</p>
-                  <button id="button-white">Follow Us</button>
-                </div>
-              </div>
-            </div>
-            <div class="about-insta-main-col">
-              <img src="./assets/about/insta3.png" alt="Instagram 3" />
-              <div class="about-insta-hover">
-                <img src="./assets/insta.svg" alt="instagram" />
-                <div>
-                  <p>@baraakofficial</p>
-                  <button id="button-white">Follow Us</button>
-                </div>
-              </div>
-            </div>
+          <div class="private-dining-col-2">
+            <img src="./assets/booking/3.png" alt="image" />
           </div>
         </div>
       </section>
-      <!-- follow-on-instagram-ends-here -->
+
+      <!-- tetstimonials-section-starts-here -->
+      <section id="testimonials">
+        <div class="container">
+          <div class="testimonials-heading">
+            <h2>
+              Our guests consistently praise us for our exceptional food and
+              service
+            </h2>
+          </div>
+          <div class="testimonials-main">
+            <div class="testimonailcard">
+              <div class="testi-card-img">
+                <img src="./assets/testi/1.png" alt="testimonials" />
+              </div>
+              <div class="testi-card-content">
+                <img src="./assets/testi-quote.svg" alt="quote" />
+                <p>
+                  The restaurant offers a delightful culinary experience. The
+                  carefully crafted dishes are a feast for the senses.
+                </p>
+                <span>- Vasant</span>
+              </div>
+            </div>
+            <div class="testimonailcard">
+              <div class="testi-card-img">
+                <img src="./assets/testi/2.png" alt="testimonials" />
+              </div>
+              <div class="testi-card-content">
+                <img src="./assets/testi-quote.svg" alt="quote" />
+                <p>
+                  Jasmine was awesome in her service. Great food and ambiance.
+                  It’s now our regular place for dinner.
+                </p>
+                <span>- Srinibash Udayasingh</span>
+              </div>
+            </div>
+            <div class="testimonailcard">
+              <div class="testi-card-img">
+                <img src="./assets/testi/3.png" alt="testimonials" />
+              </div>
+              <div class="testi-card-content">
+                <img src="./assets/testi-quote.svg" alt="quote" />
+                <p>
+                  The restaurant offers a delightful culinary experience. The
+                  carefully crafted dishes are a feast for the senses.
+                </p>
+                <span>- Prisha</span>
+              </div>
+            </div>
+          </div>
+          <progress
+            value="1"
+            max="3"
+            id="testi-progress"
+            style="
+              accent-color: #c4a063;
+              height: 3px;
+              width: 100%;
+              appearance: none;
+            "
+          ></progress>
+        </div>
+      </section>
+      <!-- tetstimonials-section-ends-here -->
 
       <!-- footer-starts-here -->
       <footer id="footer">
@@ -892,224 +866,6 @@
           header.classList.add("dark-bg");
         } else {
           header.classList.remove("dark-bg");
-        }
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Profile data with 10+ images
-        const profiles = [
-          {
-            // name: "John Peterson",
-            description:
-              "With a menu curated to reflect the soul of Indo-Arabian cuisine, Baraak blends age-old recipes with contemporary presentation, offering a unique dining experience for food lovers across Dubai.",
-            img: "./assets/about/slider/1.png",
-          },
-          {
-            name: "Adrian Zarzo",
-            description:
-              "With a menu curated to reflect the soul of Indo-Arabian cuisine, Baraak blends age-old recipes with contemporary presentation, offering a unique dining experience for food lovers across Dubai.",
-            img: "./assets/about/slider/2.png",
-          },
-          {
-            name: "Sarah Johnson",
-            description:
-              "Professional chef with 10 years of experience in fine dining restaurants across Europe.",
-            img: "./assets/about/slider/3.png",
-          },
-          {
-            name: "Michael Chen",
-            description:
-              "Mixologist and bar manager specializing in craft cocktails and premium spirits.",
-            img: "./assets/about/slider/4.png",
-          },
-          {
-            name: "Emma Wilson",
-            description:
-              "Pastry chef with expertise in French desserts and chocolate work.",
-            img: "./assets/about/slider/5.png",
-          },
-          {
-            name: "David Kim",
-            description:
-              "Sushi master with 15 years experience in Tokyo and New York.",
-            img: "./assets/about/slider/6.png",
-          },
-          {
-            name: "Lisa Rodriguez",
-            description:
-              "Wine director with extensive knowledge of Italian and French vineyards.",
-            img: "./assets/about/slider/7.png",
-          },
-          {
-            name: "James Taylor",
-            description:
-              "Head bartender specializing in molecular mixology techniques.",
-            img: "./assets/about/slider/8.png",
-          },
-          {
-            name: "Olivia Martin",
-            description:
-              "Restaurant consultant with focus on sustainable kitchen practices.",
-            img: "./assets/about/slider/9.png",
-          },
-          {
-            name: "Robert Garcia",
-            description:
-              "Executive chef with Michelin-star experience in three countries.",
-            img: "./assets/about/slider/10.png",
-          },
-        ];
-
-        const sliderImages = document.getElementById("slider-images");
-        const profileName = document.getElementById("profile-name");
-        const profileDesc = document.getElementById("profile-description");
-        const prevBtn = document.querySelector(".arrow-left");
-        const nextBtn = document.querySelector(".arrow-right");
-
-        let currentIndex = 1; // Start with second profile
-        let isAnimating = false;
-        let autoSlideInterval;
-
-        // Create image elements for all profiles
-        profiles.forEach((profile, index) => {
-          const img = document.createElement("img");
-          img.className = "slide-image hidden";
-          img.src = profile.img;
-          img.alt = profile.name;
-          img.dataset.index = index;
-          sliderImages.appendChild(img);
-        });
-
-        const images = document.querySelectorAll(".slide-image");
-
-        // Initialize slider
-        updateSlider();
-        startAutoSlide();
-
-        // Next slide with loop
-        nextBtn.addEventListener("click", () => {
-          if (isAnimating) return;
-          resetAutoSlide();
-          isAnimating = true;
-          currentIndex = (currentIndex + 1) % profiles.length;
-          updateSlider();
-          setTimeout(() => {
-            isAnimating = false;
-          }, 600);
-        });
-
-        // Previous slide with loop
-        prevBtn.addEventListener("click", () => {
-          if (isAnimating) return;
-          resetAutoSlide();
-          isAnimating = true;
-          currentIndex = (currentIndex - 1 + profiles.length) % profiles.length;
-          updateSlider();
-          setTimeout(() => {
-            isAnimating = false;
-          }, 600);
-        });
-
-        function updateSlider() {
-          // Pre-calculate positions
-          const prevIndex =
-            (currentIndex - 1 + profiles.length) % profiles.length;
-          const nextIndex = (currentIndex + 1) % profiles.length;
-
-          // Update all images
-          images.forEach((img, index) => {
-            img.classList.remove("prev", "active", "next", "hidden");
-
-            if (index === prevIndex) {
-              img.classList.add("prev");
-            } else if (index === currentIndex) {
-              img.classList.add("active");
-            } else if (index === nextIndex) {
-              img.classList.add("next");
-            } else {
-              img.classList.add("hidden");
-            }
-          });
-
-          // Update content with fade effect
-          profileName.style.opacity = 0;
-          profileDesc.style.opacity = 0;
-
-          setTimeout(() => {
-            profileName.textContent = profiles[currentIndex].name || ""; // Handle undefined name
-            profileDesc.textContent = profiles[currentIndex].description;
-            profileName.style.opacity = 1;
-            profileDesc.style.opacity = 1;
-          }, 300);
-        }
-
-        // Auto-slide functionality
-        function startAutoSlide() {
-          autoSlideInterval = setInterval(() => {
-            if (!isAnimating) {
-              isAnimating = true;
-              currentIndex = (currentIndex + 1) % profiles.length;
-              updateSlider();
-              setTimeout(() => {
-                isAnimating = false;
-              }, 600);
-            }
-          }, 5000); // Change slide every 5 seconds
-        }
-
-        function resetAutoSlide() {
-          clearInterval(autoSlideInterval);
-          startAutoSlide();
-        }
-
-        // Pause auto-slide on hover
-        sliderImages.addEventListener("mouseenter", () => {
-          clearInterval(autoSlideInterval);
-        });
-
-        sliderImages.addEventListener("mouseleave", () => {
-          startAutoSlide();
-        });
-
-        // Keyboard navigation
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "ArrowRight") {
-            nextBtn.click();
-          } else if (e.key === "ArrowLeft") {
-            prevBtn.click();
-          }
-        });
-
-        // Touch support for mobile
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        sliderImages.addEventListener(
-          "touchstart",
-          (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-            clearInterval(autoSlideInterval);
-          },
-          { passive: true }
-        );
-
-        sliderImages.addEventListener(
-          "touchend",
-          (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-            startAutoSlide();
-          },
-          { passive: true }
-        );
-
-        function handleSwipe() {
-          if (touchEndX < touchStartX - 50) {
-            nextBtn.click();
-          } else if (touchEndX > touchStartX + 50) {
-            prevBtn.click();
-          }
         }
       });
     </script>

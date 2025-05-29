@@ -1003,6 +1003,10 @@ input {
 #about-page #landing {
   background-image: url("./assets/about/header-bg.png");
 }
+#booking-page #landing {
+  background-image: url("./assets/booking/header.png");
+  min-height: 85vh;
+}
 
 #aboutus-sec {
   position: relative;
@@ -1473,6 +1477,114 @@ input {
 .findsocial img:hover {
   transform: scale(1.2);
 }
+/* book-a-reservation-section */
+#book-reservation {
+  position: relative;
+  padding: clamp(60px, 12vh, 12vh) 0;
+  background-color: #ffffff;
+  width: 100%;
+  min-height: auto;
+}
+#book-reservation .container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: clamp(40px, 4vw, 4vw);
+}
+.book-reservation-col-2 {
+  width: 100%;
+  height: 100%;
+}
+.book-reservation-col-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.book-reservation-col-1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.book-reservation-col-1 h2 {
+  font-size: clamp(25px, 2vw, 2vw);
+  color: var(--heading);
+  margin-bottom: clamp(15px, 1.5vw, 1.5vw);
+}
+.book-reservation-col-1 form {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(30px, 3vw, 3vw);
+}
+.book-reservation-col-1 form label,
+.book-reservation-col-1 form input {
+  font-size: clamp(15px, 1.1vw, 1.1vw);
+}
+.book-reservation-col-1 form label span {
+  color: red;
+}
+#private-dining {
+  position: relative;
+  padding: clamp(60px, 12vh, 12vh) 0;
+  width: 100%;
+  height: auto;
+  background-color: #1a1e25;
+  color: #fff;
+}
+#private-dining .container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: clamp(40px, 4vw, 4vw);
+}
+.private-dining-col-2 {
+  width: 100%;
+  height: 100%;
+}
+.private-dining-col-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.private-dining-col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.private-dining-col-1 h2 {
+  font-size: clamp(25px, 2vw, 2vw);
+  color: var(--heading);
+  margin-bottom: clamp(15px, 1.5vw, 1.5vw);
+}
+.private-dining-col-1 p {
+  font-size: clamp(15px, 1.1vw, 1.1vw);
+  color: #fff;
+}
+.private-dining-col-1 form {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(20px, 2vw, 2vw);
+}
+.private-dining-col-1 form label {
+  color: #fff;
+  font-size: clamp(15px, 1.1vw, 1.1vw);
+}
+.private-dining-col-1 form label span {
+  color: red;
+}
+.private-dining-col-1 form input {
+  background: transparent;
+  font-size: clamp(15px, 1.1vw, 1.1vw);
+  color: #fff;
+  border-color: var(--heading);
+}
+.private-dining-col-1 form .form-main-group-bbok-reservation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(20px, 2vw, 2vw);
+  width: 100%;
+}
 
 /* media-queries-starts-here */
 @media only screen and (max-width: 767px) {
@@ -1602,6 +1714,13 @@ input {
   }
   .findsUslocation .container {
     grid-template-columns: 1fr;
+  }
+  #book-reservation .container,
+  #private-dining .container {
+    grid-template-columns: 1fr;
+  }
+  .private-dining-col-1 {
+    row-gap: 40px;
   }
 }
 
